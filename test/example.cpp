@@ -15,12 +15,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-#include "inc/neo.hpp"
+#include "../inc/neo.hpp"
 
 class Main: public Neo::Scene {
 public:
 	Main(Neo::Renderer* r) {
-		createScene("main.style","Main",r);
+		createScene("example.style","Main",r);
 		
 		addWidget(new Neo::Button(new Neo::Label("Button",getFonts()[Neo::FONT_MEDIUM],getStyle(),r),50,50,200,40,getStyle(),r)); //widget: 0
 		
@@ -38,7 +38,7 @@ public:
 		
 		std::vector<Neo::Widget*> buttons;
 		buttons.push_back(new Neo::CheckButton(new Neo::Label("tab 1",getFonts()[Neo::FONT_MEDIUM],getStyle(),r),0,0,120,40,getStyle(),r));
-		buttons.push_back(new Neo::CheckButton(new Neo::Label("tab 2",getFonts()[Neo::FONT_MEDIUM],getStyle(),r),0,0,120,40,Neo::Style("main2.style"),r));
+		buttons.push_back(new Neo::CheckButton(new Neo::Label("tab 2",getFonts()[Neo::FONT_MEDIUM],getStyle(),r),0,0,120,40,Neo::Style("example-2.style"),r));
 		buttons.push_back(new Neo::CheckButton(new Neo::Label("tab 3",getFonts()[Neo::FONT_MEDIUM],getStyle(),r),0,0,120,40,getStyle(),r));
 		addWidget(new Neo::Container(buttons,50,300,getStyle())); //widget: 5
 	}
