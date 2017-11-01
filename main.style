@@ -1,0 +1,19 @@
+/*MAIN*/
+/*FONT*/
+font: UbuntuMono-R.ttf
+font-sizes: 40 20 14
+font-color: 255 255 255
+/*BODY*/
+background-color: 45 45 45
+
+/*WIDGETS*/
+/*BUTTON*/
+btn-padding: 5
+btn-color: 0 0 0 0
+btn-hover-color: 245 85 80 255
+btn-border: 3 245 85 80
+btn-hover-border: 3 245 85 80
+/*CONTAINER*/
+container-distance: 10
+container-color: 0 0 0 0
+container-border: 3 35 35 35
